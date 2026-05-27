@@ -1,0 +1,30 @@
+﻿# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+.env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS junk
+.DS_Store
+._*
+
+# Generated artifacts
+data/dqn_agent.pth
+plots/*.png
+data/*.csv
+data/*.json
+
+# Keep selected small results
+!plots/corpus_letter_freq.png
+!plots/wrong_guess_letters.png
+!plots/dqn_reward.png
+!plots/dqn_success_rate.png
+!data/baseline_results.csv
+!data/dqn_results.csv
+!data/dqn_eval_metrics.json
