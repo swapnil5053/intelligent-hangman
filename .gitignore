@@ -1,4 +1,4 @@
-﻿# Python
+# Python
 __pycache__/
 *.pyc
 *.pyo
@@ -25,6 +25,7 @@ data/*.json
 !plots/wrong_guess_letters.png
 !plots/dqn_reward.png
 !plots/dqn_success_rate.png
+!plots/frontend_screenshot.png
 !data/baseline_results.csv
 !data/dqn_results.csv
 !data/dqn_eval_metrics.json
