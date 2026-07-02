@@ -21,7 +21,6 @@ The repository includes a Python FastAPI backend for model inference and a Next.
 
 ## Token Vocabularies
 
-### 1. Transformer Input Tokens
 The sequence model maps game state tokens to indices:
 * **a to z**: Indices `0` to `25`
 * **_** (Mask): Index `26`
@@ -30,13 +29,6 @@ The sequence model maps game state tokens to indices:
 
 The model input sequence is constructed as:
 `[Masked Word (padded to 20 tokens)]` + `[<sep>]` + `[Wrong Guesses (padded to 26 tokens)]` (Total length: 47 tokens).
-
-### 2. Frontend Design Tokens
-Styling tokens are configured as CSS custom properties:
-* **`--background`**: `#0a0a0a` (Main dark layout)
-* **`--foreground`**: `#ededed` (General text)
-* **`--font-sans` / `--font-mono`**: Geist Sans and Geist Mono font families
-* **Color accents**: Sky blue (active predictions, lives) and emerald green (correct inputs, success states)
 
 ## Getting Started
 
